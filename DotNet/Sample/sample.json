@@ -1,0 +1,103 @@
+{
+  "settings": {
+    "classifications": [
+      "cash",
+      "security",
+      "assetClass"
+    ],
+    "tolerance": 1e-6,
+    "cash": {
+      "cash": "<all>"
+    }
+  },
+  "master": {
+    "data": {
+      "GBP": {
+        "cash": "GBP"
+      },
+      "STOCK1": {
+        "security": "STOCK1",
+        "assetClass": "equity",
+        "rounding": 1
+      },
+      "STOCK2": {
+        "security": "STOCK2",
+        "assetClass": "equity",
+        "rounding": 1
+      }
+    }
+  },
+  "portfolios": {
+    "data": {
+      "portfolio1": {
+        "data": {
+          "GBP": {
+            "holding": 40
+          },
+          "STOCK1": {
+            "holding": 130
+          }
+        }
+      }
+    }
+  },
+  "instructions": {
+    "symbols": {
+    },
+    "portfolios": {
+    },
+    "rules": {
+    }
+  },
+  "terms": {
+    "data": {
+      "general": {
+        "buyCharge": 0,
+        "sellCharge": 0,
+        "classes": [
+        ],
+        "symbols": {
+        }
+      },
+      "portfolios": {
+      }
+    }
+  },
+  "models": {
+    "data": {
+      "model1": {
+        "data": {
+          "STOCK1": {
+            "security": "STOCK1",
+            "weight": 0.5,
+            "operator": "->",
+            "default": "STOCK1"
+          },
+          "STOCK2": {
+            "security": "STOCK2",
+            "weight": 0.5,
+            "operator": "->",
+            "default": "STOCK2"
+          }
+        }
+      }
+    }
+  },
+  "sessions": {
+    "session1": {
+      "portfolio": "portfolio1",
+      "model": "model1"
+    }
+  },
+  "rules": {
+    "data": {
+    }
+  },
+  "valuation": {
+    "data": {
+      "GBP": 1,
+      "STOCK1": 0.7,
+      "STOCK2": 3.5
+    }
+  }
+}

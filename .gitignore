@@ -1,2 +1,6 @@
 babel-webpack/node_modules/
 babel-webpack/dist/
+/DotNet/.vs/
+/DotNet/packages
+/DotNet/Sample/bin/
+/DotNet/Sample/obj/
